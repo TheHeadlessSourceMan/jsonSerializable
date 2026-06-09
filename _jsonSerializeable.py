@@ -42,7 +42,7 @@ class JsonSerializeable:
         self._location:typing.Optional[UrlCompatible]=None
         self._jsonObj:typing.Optional[JsonObj]=None
         if location is not None:
-            self.loadJson(location)
+            self.load(location)
         if jsonObj is not None:
             self.jsonObj=jsonObj
 
